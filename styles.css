@@ -286,8 +286,36 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-    margin-top: 10%;
+    gap: 0;
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+
+.card-video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #b800ff;
+  padding-bottom: 3%;
+  border-radius: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+.card-video h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.card-video p{
+  margin-bottom: 5%;
+  text-align: start;
+  font-size: 1.3rem;
 }
 
 
@@ -566,4 +594,29 @@ button {
 .linkedin-div img:hover{
   transform: scale(1.1) rotate(10deg);
 
+}
+
+
+
+/* Style du bouton de retour */
+.back-button {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-button img{
+  width: 200%;
+}
+
+.back-button:hover {
+
+  transform: scale(1.1);
+}
+
+.back-button:active {
+  transform: scale(1);
 }
