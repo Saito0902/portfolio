@@ -30,6 +30,10 @@ html{
     justify-content: center;
 }
 
+.presentation p{
+  text-align: left;
+}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
@@ -116,6 +120,13 @@ nav a {
     font-weight: lighter;
 }
 
+nav a:hover{
+  color: #000000;
+  background-color: #b800ff;
+  border: solid rgb(0, 0, 0) 1px;
+  
+}
+
 
 
 section {
@@ -168,7 +179,7 @@ section {
     grid-template-rows: 1fr;
     column-gap: 5%;
     row-gap: 0;
-    margin: 10% 10% 0 10%;
+    margin: 5% 10% 0 10%;
     
 }
 
@@ -188,6 +199,7 @@ section {
 
 .grille-pro-dev img:hover{
     box-shadow: #ffffff 0px 0px 25px 1px;
+    opacity: 0.3;
 }
 
 
@@ -198,7 +210,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10% 10% 0 10%;
+    margin: 5% 10% 0 10%;
     
 }
 
@@ -279,43 +291,6 @@ section {
 }
 
 
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-}
-
-
-form label {
-    margin-top: 1rem;
-}
-
-
-form input, form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background-color: #b800ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-nav a:hover, form button:hover {
-    transition: background-color 0.5s ease;
-    background-color: #b800ff;
-    color: #000000;
-    border: solid #000000 1px;
-    
-
-}
 
 
 h2{
@@ -333,7 +308,7 @@ h2{
 }
 
 .parcours{
-    margin-top: 30%;
+    margin-top: 20%;
     height: 100vh;
     display: flex;
     gap: 100px;
@@ -344,12 +319,6 @@ h2{
 
 
 
-
-
-
-
-
-/* General code */
 
 body {
   font-family: "Barlow Condensed";
@@ -400,7 +369,7 @@ button {
   min-width: 100px;
   height: 115px;
   border-radius: 10px;
-  background-color: rgb(176, 179, 204);
+  background-color: rgb(255, 255, 255);
   z-index: 2;
   position: relative;
   padding: 1%;
@@ -431,8 +400,6 @@ button {
 }
 
 
-
-/* Linear timeline from top to bottom */
 .vertical .block {
   display: flex;
   flex-direction: row;
@@ -473,13 +440,13 @@ button {
   margin: -70px 11px 0px -15px;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-right: 20px solid rgb(176, 179, 204);
+  border-right: 20px solid rgb(255, 255, 255);
 }
 .square.right::after {
   margin: -75px 0px 0px 242px;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid rgb(176, 179, 204);
+  border-left: 20px solid rgb(255, 255, 255);
 }
 
 .parcours p{
@@ -490,24 +457,113 @@ button {
 }
 
 
+.avis{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20%;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
 
 
+.grille-avis{
+  width: 80%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr;
+  column-gap: 5%;
+  row-gap: 8%;
+}
 
+.avis-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #b800ff;
+  width: 100%;
+  gap: 5%;
+  height: fit-content;
+  border-radius: 20px;
+  transition: all ease-in-out 0.2s;
+}
 
+.avis-card:hover{
+  transform: scale(1.1);
+}
 
+.avis-card p{
+  margin-top: 0;
+  margin-right: 5%;
+  margin-left: 5%;
+}
 
+.avis img{
+  width: 30%;
+  margin-top: 7%;
+  border-radius: 100%;
+}
 
+.avis h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2%;
+}
 
 
 
 
 .contact{
     height: 100vh;
-    margin-top: 20%;
+    margin-top: 5%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
+}
 
+.contact h2{
+  margin-top: 16%;
+}
+
+
+.contact-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25%;
+  gap: 10%;
+  width: 100vh;
+}
+
+.contact img{
+  width: 45%;
+  margin-bottom: 5%;
+  transition: all ease-in-out 0.2s;
+}
+
+.mail-div img{
+  width: 25%;
+  margin-bottom: 5%;
+}
+
+
+
+.tel-div img:hover{
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.mail-div img:hover{
+  transform: scale(1.2)
+}
+
+.linkedin-div img:hover{
+  transform: scale(1.1) rotate(10deg);
 
 }
