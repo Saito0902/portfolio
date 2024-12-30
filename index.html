@@ -1,0 +1,136 @@
+HTML : <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+
+        <section id="large-header" class="large-header">
+                <div class="avatar">
+                <img class="logo" src="SVG/Logo-Portfolio.svg" alt="" />
+                </div>
+            </section>
+        
+        <section id="presentation" class="presentation">
+             <h2>Lucas Haudiquet</h2>
+             <p>Passionné par la création visuelle et le multimédia, je suis actuellement en 2e année de BUT Métiers du Multimédia et de l'Internet (MMI). Mon parcours me permet de conjuguer créativité et technique, en combinant design graphique, montage audiovisuel et développement front-end. <br><br>
+
+                Au fil de mes projets, j'ai réalisé des vidéos impactantes, des identités visuelles soignées, et des sites web intuitifs. Mon objectif est de mettre en valeur vos idées à travers des créations uniques et fonctionnelles, adaptées à vos besoins. <br><br>
+                
+
+                Que vous soyez une entreprise à la recherche d'un créateur talentueux ou un client souhaitant donner vie à un projet, je suis prêt à relever le défi. Découvrez mon travail et imaginons ensemble de nouvelles possibilités.</p>
+        </section>
+        
+        <section id="projets" class="projets">
+            <h2>Mes Projets</h2>
+            <div class="grille-projets"> 
+                <a href="crea.html"><img class="crea" src="Images/crea.jpg" alt=""></a>
+                <a href="dev.html"><img class="dev" src="Images/dev.jpg" alt=""></a>
+                <a href="video.html"><img class="video" src="Images/video.jpg" alt=""></a>
+                <p>Création / Design</p>
+                <p>Développement</p>
+                <p>Audiovisuel</p>
+            </div>
+            
+        </section>
+
+        <section id="parcours" class="parcours">
+            <h2>Mon Parcours</h2>
+        
+            
+            <!-- Second linear timeline -->
+            <div id="vertical-timeline" class="timeline vertical">
+              <div class="block">
+                <div class="square right">
+                  <h3>École primaire</h3>
+                  <h4>André Malraux</h4>
+                  <p>J'ai passé le début de ma scolarité dans cette école située dans ma ville natale à Villiers-sur-Orge.</p>
+                </div>
+                <div class="circle">
+                  <p>2010</p>
+                </div>
+                <div class="link"></div>
+                <div class="square left blank"></div>
+              </div>
+            
+              <div class="block">
+                <div class="square right blank"></div>
+                <div class="circle">
+                  <p>2016</p>
+                </div>
+                <div class="link"></div>
+                <div class="square left">
+                  <h3>Collège</h3>
+                  <h4>Blaise Pascal</h4>
+                  <p>J'ai poursuivi mes années collège à villemoisson-sur-Orge obtenu le brevet avec mention très bien.</p>
+                </div>
+              </div>
+            
+              <div class="block">
+                <div class="square right">
+                  <h3>Lycée</h3>
+                  <h4>Jean-Baptiste Corot</h4>
+                  <p>Puis j'ai fait un lycée général avec les spécialités Mathématiques et NSI, afin d'obtenir mon baccalauréat avec mention assez bien.</p>
+                </div>
+                <div class="circle activated">
+                  <p>2020</p>
+                </div>
+                <div class="link"></div>
+                <div class="square left blank"></div>
+              </div>
+           
+            
+              <div class="block">
+                <div class="square right blank">
+
+                </div>
+                <div class="circle">
+                  <p>2023</p>
+                </div>
+                <div class="link"></div>
+                <div class="square left">
+                    <h3>BUT MMI</h3>
+                    <h4>Université Gustave Eiffel</h4>
+                    <p>Et je suis actuellement en 2ème année de BUT MMI (Métiers du Multimédia et de l'Internet), où j'apprends notammentgit le graphisme, l'audiovisuel, le design, le développement web et la communication.</p>
+                </div>
+              </div>
+              <div id="end"></div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="contact">
+            <h2>Contactez-moi</h2>
+            <form action="path/to/your/form/handler" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
