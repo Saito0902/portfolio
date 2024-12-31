@@ -179,8 +179,21 @@ section {
     grid-template-rows: 1fr;
     column-gap: 5%;
     row-gap: 0;
-    margin: 5% 10% 0 10%;
+    background-color: #86868680;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-radius: 20px;
     
+}
+
+.grille-pro-dev p{
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .grille-pro-dev img{
@@ -191,16 +204,36 @@ section {
     transition: all ease-in-out 0.2s;
 }
 
+.grille-pro-dev h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
 .grille-pro-dev a{
 
     padding: 0;
+  
     
 }
 
 .grille-pro-dev img:hover{
     box-shadow: #ffffff 0px 0px 25px 1px;
-    opacity: 0.3;
+
 }
+
+
+
+
+.img-card{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
 
 
 /* ////////////////////// */
