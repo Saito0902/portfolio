@@ -581,7 +581,9 @@ button {
 
 
 .contact{
+  position: relative;
     height: 100vh;
+    width: 100%;
     margin-top: 5%;
     display: flex;
     align-items: center;
@@ -598,7 +600,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 0;
   gap: 10%;
   width: 100vh;
 }
@@ -651,5 +653,30 @@ button {
 }
 
 .back-button:active {
+  transform: scale(1);
+}
+
+
+
+
+.back-button-home {
+  position: absolute;
+  bottom: 2%;
+  right: 4%;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-button-home img{
+  width: 400%;
+}
+
+.back-button-home:hover {
+
+  transform: scale(1.1);
+}
+
+.back-button-home:active {
   transform: scale(1);
 }
